@@ -18,20 +18,27 @@ public class Synth : MonoBehaviour
         for (int i = 0; i < data.Length; i++)
         {
 
-
+            // Siren
             //var y = Mathf.Sin(Mathf.Sin(i / 13230f / (Mathf.PI * 2f)) * 14000f);
             //y += Mathf.Sin(Mathf.Sin(i / 13230f / (Mathf.PI * 2f)) * 14000f);
             //y += Mathf.Sin(Mathf.Sin(i / 13230f / (Mathf.PI * 2f)) * 14000f);
             //print(y);
             //data[i] = y * 100;
 
+            // Lab alarm
+            //var y = Mathf.Sin(i / 44100f / Mathf.PI * 2f * 9800f);
+            //var y2 = Mathf.Sin(i / 44100f / Mathf.PI * 2f * 18000f);
+            //print(y);
+            //data[i] = (y + y2) * 0.5f * (Mathf.Sin(i / 11025f / Mathf.PI * 2f) * 5);
+
+
+
+
+
+
             // wtf??
             //var y = Mathf.Sin(i / 44100f / Mathf.PI * 2f * (Mathf.Sin((i / (Mathf.PI * 2f)) * 9800f)));
-            // Lab alarm
-            var y = Mathf.Sin(i / 44100f / Mathf.PI * 2f * 9800f);
-            var y2 = Mathf.Sin(i / 44100f / Mathf.PI * 2f * 18000f);
-            print(y);
-            data[i] = (y + y2) * 0.5f * (Mathf.Sin(i / 11025f / Mathf.PI * 2f) * 5);
+
 
             // Emergency alarm
             //data[i] = Mathf.Sin(i / 44100f * Mathf.PI * 2f * 853f);
