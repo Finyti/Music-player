@@ -9,6 +9,7 @@ public class Synth : MonoBehaviour
 
     public float frequency;
     public float volume;
+
     void Start()
     {
         var clip = AudioClip.Create("Sin", 44100*10, 1, 44100, false);
@@ -52,6 +53,8 @@ public class Synth : MonoBehaviour
 
         audioSource.Play();
     }
+
+
 
 
 }

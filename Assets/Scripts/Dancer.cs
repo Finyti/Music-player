@@ -7,7 +7,7 @@ public class Dancer : MonoBehaviour
 {
 
     public Transform dancer;
-    public float power = 2;
+    public float power = 0.5f;
     public float startSize = 1f;
 
     public Color startColor;
@@ -31,6 +31,7 @@ public class Dancer : MonoBehaviour
 
         dancerLight.color = mixedColor * 2;
         dancerLight.intensity = 0.5f + volume;
+
 
     }
 
